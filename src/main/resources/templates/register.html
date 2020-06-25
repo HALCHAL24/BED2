@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+</head>
+<body >
+<h1>Registration</h1><br><br><br>
+<table>
+<form action="Register">
+<tr><td>First Name:<input type="text" name="fname" pattern="[a-zA-Z]{1,}" title="Enter Characters" required></td></tr>
+<tr><td>Last Name: <input type="text" name="lname" pattern="[a-zA-Z]{1,}" title="Enter Characters" required></td></tr>
+<tr><td>Email ID:  <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="Enter Correct Email Id"required></td></tr>
+<tr><td>Password:  <input type="password" name="password" pattern=".{8,}" title="Enter Eight or more characters" required></td></tr>
+<tr><td><input type="submit" value="REGISTER"></td></tr>
+</form>
+</table>
+</body>
+</html>

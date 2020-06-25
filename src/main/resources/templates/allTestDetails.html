@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+
+<title>All Tests Details</title>
+</head>
+<body>
+<h1>List of All Test</h1>
+<table border="3">
+<thead><tr>
+<th>Test Date</th>
+<th>Assessment</th>
+<th>Test Marks</th>
+<th>Email ID</th>
+<th>Total Marks</th>
+<th>Result</th>
+</tr></thead>
+<tbody>
+<tr th:each="a : ${allTest}">
+<td th:text="${a.testDate}">Test Date</td>
+<td th:text="${a.assessment}">Assessment</td>
+<td th:text="${a.obtainedMarks}">Test Marks</td>
+<td th:text="${a.email}">Email ID</td>
+<td th:text="${a.totalMarks}">Total Marks</td>
+<td th:text="${a.result}">Result</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>
